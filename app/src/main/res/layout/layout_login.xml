@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/whatsnew_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/login_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/login_top_bg" >
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="23dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/main_title"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/login_user_edit"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/login_top_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:background="#ffffff"
+        android:hint="@string/login_user_hint"
+        android:textColor="#aaaaaa"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/login_passwd_edit"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/login_user_edit"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:background="#ffffff"
+        android:hint="@string/login_passwd_hint"
+        android:inputType="textPassword"
+        android:textColor="#aaaaaa"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/login_passwd_edit"
+        android:layout_marginTop="58dp" >
+
+
+        <Button
+            android:id="@+id/login_login_btn"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="185dp"
+            android:background="@drawable/main_login_selector"
+            android:text="@string/main_login"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/lookPwd"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/login_passwd_edit"
+        android:layout_below="@+id/login_passwd_edit"
+        android:layout_marginTop="19dp"
+        android:text="显示密码"
+        android:textColor="#aaaaaa" />
+
+</RelativeLayout>

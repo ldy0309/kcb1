@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/lidanyang/Desktop/kcb1/kcb1/G:\\5android\\kcb1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\fade.xml",
+        "source": "/Users/lidanyang/Desktop/kcb1/kcb1/G:\\5android\\kcb1\\app\\src\\main\\res\\anim\\fade.xml"
+    },
+    {
+        "merged": "/Users/lidanyang/Desktop/kcb1/kcb1/app/build/intermediates/res/merged/debug/anim/fade.xml",
+        "source": "/Users/lidanyang/Desktop/kcb1/kcb1/app/src/main/res/anim/fade.xml"
+    },
+    {
+        "merged": "/Users/lidanyang/Desktop/kcb1/kcb1/G:\\5android\\kcb1\\app\\build\\intermediates\\res\\merged\\debug\\anim\\hold.xml",
+        "source": "/Users/lidanyang/Desktop/kcb1/kcb1/G:\\5android\\kcb1\\app\\src\\main\\res\\anim\\hold.xml"
+    },
+    {
+        "merged": "/Users/lidanyang/Desktop/kcb1/kcb1/app/build/intermediates/res/merged/debug/anim/hold.xml",
+        "source": "/Users/lidanyang/Desktop/kcb1/kcb1/app/src/main/res/anim/hold.xml"
+    }
+]
