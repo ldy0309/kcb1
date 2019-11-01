@@ -120,8 +120,7 @@
         android:layout_below="@+id/linearLayout1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:background="@drawable/main_login_selector"
-
+        android:background="@drawable/login_top_bg"
         android:text="@string/str_addClass"
         android:textColor="#ffffff"
         android:textSize="18sp" />

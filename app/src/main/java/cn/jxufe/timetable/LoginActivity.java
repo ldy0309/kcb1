@@ -55,7 +55,7 @@ public class LoginActivity extends Activity implements OnClickListener {
 		setContentView(R.layout.layout_login);
 		database = openDatabase();
 		loginBtn = (Button) findViewById(R.id.login_login_btn);
-		loginBtn.setOnClickListener(this);// 注册监听器 一定不能忘
+		loginBtn.setOnClickListener(this);// 注册监听器
 		passwdEdit = (EditText) findViewById(R.id.login_passwd_edit);
 		userEdit = (EditText) findViewById(R.id.login_user_edit);
 		 
@@ -92,7 +92,7 @@ public class LoginActivity extends Activity implements OnClickListener {
 			if (("".equals(userEditStr) || null == userEditStr)
 					|| ("".equals(passwdEditStr) || null == passwdEditStr)) {// 只要用户名和密码有一个为空
 				Toast.makeText(getApplicationContext(),
-						"微课表账号或密码不能为空，请输入微课表账号或密码", Toast.LENGTH_SHORT).show();
+						"课表账号或密码不能为空，请输入课表账号或密码", Toast.LENGTH_SHORT).show();
 			} else {
 				int count = 0;
 				Cursor cursor = database
@@ -128,6 +128,7 @@ public class LoginActivity extends Activity implements OnClickListener {
 			break;
 		}
 	}
+
  
 	protected void onDestroy() {
 		super.onDestroy();

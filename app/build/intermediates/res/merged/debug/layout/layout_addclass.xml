@@ -3,7 +3,7 @@
     android:id="@+id/addClass"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/whatsnew_bg"
+    android:background="@drawable/background"
     android:gravity="center_horizontal"
     android:orientation="vertical" >
 
@@ -41,12 +41,12 @@
         android:id="@+id/addClass_teacher"
         android:layout_width="300dp"
         android:layout_height="45dp"
-        android:layout_alignLeft="@+id/addClass_place"
         android:layout_below="@+id/addClass_place"
-        android:layout_marginTop="16dp"
+        android:layout_alignLeft="@+id/addClass_place"
+        android:layout_marginTop="40dp"
         android:background="#ffffff"
         android:ems="10"
-        android:hint="@string/class_teacher"
+        android:text="@string/class_teacher"
         android:textColor="@color/black"
         android:textSize="15sp" />
 
@@ -56,10 +56,10 @@
         android:layout_height="45dp"
         android:layout_below="@+id/addClass_course"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="40dp"
         android:background="#ffffff"
         android:ems="10"
-        android:hint="@string/class_place"
+        android:text="@string/class_place"
         android:textColor="@color/black"
         android:textSize="15sp" />
 
@@ -67,12 +67,13 @@
         android:id="@+id/addClass_course"
         android:layout_width="300dp"
         android:layout_height="45dp"
-        android:layout_alignLeft="@+id/addClass_place"
         android:layout_below="@+id/addClass_top_layout"
-        android:layout_marginTop="15dp"
+        android:layout_alignLeft="@+id/addClass_place"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginTop="58dp"
         android:background="#ffffff"
         android:ems="10"
-        android:hint="@string/class_course"
+        android:text="@string/class_course"
         android:textColor="@color/black"
         android:textSize="15sp" />
 
@@ -90,6 +91,7 @@
             android:id="@+id/spinner_week"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/linearLayout1"
             android:layout_weight="1"
             android:entries="@array/week"
             android:textColor="@color/black" />
@@ -117,7 +119,8 @@
         android:layout_height="40dp"
         android:layout_below="@+id/linearLayout1"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/main_login_selector"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/login_top_bg"
         android:text="@string/str_addClass"
         android:textColor="#ffffff"
         android:textSize="18sp" />

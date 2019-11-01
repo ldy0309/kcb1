@@ -9,6 +9,7 @@
 	<string name="login_passwd_hint">密码</string>
     <string name="login_passwd_retry">重复密码</string>
 	<string name="login_forget_passwd">忘记密码?</string>
+    <string name="logout_have_passwd">已有账户，点击登录</string>
 	
 	<string name="class_course">课程名称</string>
 	<string name="class_teacher">教师</string>
