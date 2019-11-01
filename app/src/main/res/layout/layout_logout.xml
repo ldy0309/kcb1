@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <RelativeLayout
+        android:id="@+id/login_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/login_top_bg" >
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="23dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/main_title"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/login_user_edit"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/login_top_layout"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:background="#ffffff"
+        android:hint="@string/login_user_hint"
+        android:textColor="#aaaaaa"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/login_passwd_edit"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/login_user_edit"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:background="#ffffff"
+        android:hint="@string/login_passwd_hint"
+        android:inputType="textPassword"
+        android:textColor="#aaaaaa"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/login_passwd_reedit"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/login_user_edit"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="150dp"
+        android:background="#ffffff"
+        android:hint="@string/login_passwd_retry"
+        android:inputType="textPassword"
+        android:textColor="#aaaaaa"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/login_passwd_edit"
+        android:layout_marginTop="100dp" >
+
+    <Button
+        android:id="@+id/login_login_btn"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="130dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/main_login_selector"
+        android:text="@string/main_logout"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

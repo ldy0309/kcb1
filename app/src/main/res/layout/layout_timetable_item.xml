@@ -12,13 +12,16 @@
     	android:layout_alignParentTop="true"
     	android:textColor="#ffffff"
     	android:textSize="16sp"/>
-    <TextView 
-        android:id="@+id/teacher"
-        android:layout_width="fill_parent"
-    	android:layout_height="wrap_content"
-    	android:layout_below="@id/course"
-    	android:textColor="#ffffff"
-    	android:textSize="12sp"/>
+
+	<TextView
+		android:id="@+id/teacher"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/course"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="17dp"
+		android:textColor="#ffffff"
+		android:textSize="12sp" />
     <TextView 
         android:id="@+id/place"
         android:layout_width="fill_parent"

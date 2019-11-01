@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="hello">Hello World!</string>
-    <string name="app_name">微课表</string>
-    <string name="main_title">微课表</string>
+    <string name="app_name">掌上课表</string>
+    <string name="main_title">课表</string>
 	<string name="main_login">登录</string>
+    <string name="main_logout">注册</string>
 	<string name="login_user_hint">用户名</string>
 	<string name="login_passwd_hint">密码</string>
+    <string name="login_passwd_retry">重复密码</string>
 	<string name="login_forget_passwd">忘记密码?</string>
 	
 	<string name="class_course">课程名称</string>
@@ -21,7 +23,7 @@
     <string name="sunday">星期日</string>
 
     <string name="str_addClass">确认修改</string>
-    <string name="start_text">微课表，方便你的生活！</string>
-    <string name="start_btn">开启微课表</string>
+    <string name="start_text">掌上课表，方便你的生活！</string>
+    <string name="start_btn">开启掌上课表</string>
     
 </resources>
