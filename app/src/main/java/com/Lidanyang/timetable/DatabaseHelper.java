@@ -1,4 +1,4 @@
-package cn.jxufe.timetable;
+package com.Lidanyang.timetable;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

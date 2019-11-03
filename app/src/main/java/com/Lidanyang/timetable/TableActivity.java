@@ -1,4 +1,4 @@
-package cn.jxufe.timetable;
+package com.Lidanyang.timetable;
 
 import java.util.Locale;
 
@@ -19,7 +19,6 @@ import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class TableActivity extends Activity {
 	private SQLiteDatabase database;
@@ -104,7 +103,6 @@ public class TableActivity extends Activity {
 				Intent intent = new Intent();
 				intent.setClass(TableActivity.this, AddClassActivity.class);
 				TableActivity.this.startActivity(intent);
-				overridePendingTransition(R.anim.fade, R.anim.hold);
 				TableActivity.this.finish();
 			}
 		});
@@ -135,15 +133,15 @@ public class TableActivity extends Activity {
 			
 		}
 		View view = LayoutInflater.from(this).inflate(R.layout.layout_timetable_item, null);
-		view.setMinimumHeight(dip2px(this, classes * 48));
 		view.setBackgroundColor(colors[color]);
+		view.setMinimumHeight(dip2px(this,classes*48));
 		((TextView) view.findViewById(R.id.course)).setText(course);
 		((TextView) view.findViewById(R.id.teacher)).setText("教师："+teacher);
 		((TextView) view.findViewById(R.id.place)).setText("地点："+place);
 		// 为课程View设置点击的监听器
 		layout.addView(view);
 		TextView blank = new TextView(this);
-		blank.setHeight(dip2px(this, classes));
+		blank.setHeight(dip2px(this,classes));
 		layout.addView(blank);
 	}
 
@@ -163,9 +161,4 @@ public class TableActivity extends Activity {
 		return (int) (dpValue * scale + 0.5f);
 	}
 
-	/** * 根据手机的分辨率从 px(像素) 的单位 转成为 dp */
-	public static int px2dip(Context context, float pxValue) {
-		final float scale = context.getResources().getDisplayMetrics().density;
-		return (int) (pxValue / scale + 0.5f);
-	}
 }

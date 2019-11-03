@@ -1,4 +1,4 @@
-package cn.jxufe.timetable;
+package com.Lidanyang.timetable;
 
 import android.app.Activity;
 import android.content.ContentValues;
@@ -39,7 +39,6 @@ public class AddClassActivity extends Activity {
 				Intent intent = new Intent();
 				intent.setClass(AddClassActivity.this, TableActivity.class);
 				AddClassActivity.this.startActivity(intent);
-				overridePendingTransition(R.anim.fade, R.anim.hold);
 				AddClassActivity.this.finish();
 			}
 		});
@@ -58,16 +57,15 @@ public class AddClassActivity extends Activity {
 				values.put("teacher", e_teacher.getText().toString());
 				values.put("place", e_place.getText().toString());
 				values.put("color", returnColor(s_color.getSelectedItem().toString()));
-				// 参数1为表名，参数2为更新后的值，参数3表示满足条件的列名称，参数4为该列名下的值
 				String week=returnWeek(s_week.getSelectedItem().toString());
 				String num=returnClasses(s_classes.getSelectedItem().toString());
+				// 参数1为表名，参数2为更新后的值，参数3表示满足条件的列名称，参数4为该列名下的值
 				database.update("t_course", values, "week=? and num=?", new String[]{ week, num });
 				
 				
 				Intent intent = new Intent();
 				intent.setClass(AddClassActivity.this, TableActivity.class);
 				AddClassActivity.this.startActivity(intent);
-				overridePendingTransition(R.anim.fade, R.anim.hold);
 				AddClassActivity.this.finish();
 			}
 		});

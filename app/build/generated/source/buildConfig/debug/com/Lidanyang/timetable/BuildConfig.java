@@ -1,7 +1,7 @@
 /**
  * Automatically generated file. DO NOT MODIFY
  */
-package cn.jxufe.timetable;
+package com.Lidanyang.timetable;
 
 public final class BuildConfig {
   public static final boolean DEBUG = Boolean.parseBoolean("true");

@@ -24,10 +24,6 @@
         "source": "/Users/lidanyang/Desktop/kcb1/kcb1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.0/res/anim/abc_fade_out.xml"
     },
     {
-        "merged": "/Users/lidanyang/Desktop/kcb1/kcb1/app/build/intermediates/res/merged/debug/anim/fade.xml",
-        "source": "/Users/lidanyang/Desktop/kcb1/kcb1/app/src/main/res/anim/fade.xml"
-    },
-    {
         "merged": "/Users/lidanyang/Desktop/kcb1/kcb1/app/build/intermediates/res/merged/debug/anim/tooltip_enter.xml",
         "source": "/Users/lidanyang/Desktop/kcb1/kcb1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.0/res/anim/tooltip_enter.xml"
     },
@@ -42,10 +38,6 @@
     {
         "merged": "/Users/lidanyang/Desktop/kcb1/kcb1/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
         "source": "/Users/lidanyang/Desktop/kcb1/kcb1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.0/res/anim/abc_fade_in.xml"
-    },
-    {
-        "merged": "/Users/lidanyang/Desktop/kcb1/kcb1/app/build/intermediates/res/merged/debug/anim/hold.xml",
-        "source": "/Users/lidanyang/Desktop/kcb1/kcb1/app/src/main/res/anim/hold.xml"
     },
     {
         "merged": "/Users/lidanyang/Desktop/kcb1/kcb1/app/build/intermediates/res/merged/debug/anim/tooltip_exit.xml",

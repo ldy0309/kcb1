@@ -19,7 +19,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
         <activity
-            android:name="cn.jxufe.timetable.LoginActivity"
+            android:name="com.Lidanyang.timetable.LoginActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,8 +27,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="cn.jxufe.timetable.TableActivity" />
-        <activity android:name="cn.jxufe.timetable.AddClassActivity" />
+        <activity android:name="com.Lidanyang.timetable.TableActivity" />
+        <activity android:name="com.Lidanyang.timetable.AddClassActivity" />
 
         <meta-data
             android:name="android.support.VERSION"

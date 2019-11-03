@@ -1,4 +1,4 @@
-package cn.jxufe.timetable;
+package com.Lidanyang.timetable;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -13,7 +13,6 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
@@ -22,17 +21,15 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.EditText;
-import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 
 //  登录用户名密码 xueba 123456
 public class LoginActivity extends Activity implements OnClickListener {
-	Button rebackBtn, loginBtn;
+	Button loginBtn;
 	EditText userEdit, passwdEdit;
 	private CheckBox lookPwd;
-	PopupWindow popup;
 	RelativeLayout loginLayout;
 	private SQLiteDatabase database;
 	private final String DATABASE_PATH = Environment
@@ -82,7 +79,7 @@ public class LoginActivity extends Activity implements OnClickListener {
 		});
 	}
 
-	@Override
+
 	public void onClick(View v) {
 		int viewId = v.getId();
 		switch (viewId) {
@@ -114,20 +111,22 @@ public class LoginActivity extends Activity implements OnClickListener {
 					intent.setClass(LoginActivity.this, TableActivity.class);
 					/* 启动一个新的Activity */
 					LoginActivity.this.startActivity(intent);
-					overridePendingTransition(R.anim.fade, R.anim.hold);
 					/* 关闭当前的Activity */
 					LoginActivity.this.finish();
 					// 获取参数
 					// String name=intent.getStringExtra("msg");
 
 				} else {
-					Toast.makeText(getApplicationContext(), "登录失败",
+					Toast.makeText(getApplicationContext(), "课表账号或密码错误！",
 							Toast.LENGTH_SHORT).show();
 				}
 			}
 			break;
+
 		}
 	}
+
+
 
  
 	protected void onDestroy() {

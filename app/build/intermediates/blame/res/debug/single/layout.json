@@ -212,10 +212,6 @@
         "source": "/Users/lidanyang/Desktop/kcb1/kcb1/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/26.0.0/res/layout/notification_template_big_media_custom.xml"
     },
     {
-        "merged": "/Users/lidanyang/Desktop/kcb1/kcb1/app/build/intermediates/res/merged/debug/layout/layout_logout.xml",
-        "source": "/Users/lidanyang/Desktop/kcb1/kcb1/app/src/main/res/layout/layout_logout.xml"
-    },
-    {
         "merged": "/Users/lidanyang/Desktop/kcb1/kcb1/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
         "source": "/Users/lidanyang/Desktop/kcb1/kcb1/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.0.0/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
